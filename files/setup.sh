@@ -6,8 +6,8 @@ sudo apt-get -y update > /dev/null 2>&1
 sudo apt install -y unzip mariadb-client jq > /dev/null 2>&1
 # sudo apt install -y mariadb-client
 # sudo apt install -y jq
-wget https://releases.hashicorp.com/vault/0.10.1/vault_0.10.1_linux_amd64.zip
-sudo unzip vault_0.10.1_linux_amd64.zip -d /usr/local/bin/
+wget https://releases.hashicorp.com/vault/0.11.1/vault_0.11.1_linux_amd64.zip
+sudo unzip vault_0.11.1_linux_amd64.zip -d /usr/local/bin/
 
 # Fire up the Vault!
 # nohup vault server -dev -dev-root-token-id=root -dev-listen-address=0.0.0.0:8200 &
