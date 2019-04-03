@@ -196,7 +196,6 @@ resource "azurerm_mysql_server" "mysql" {
 
   sku {
     name     = "B_Gen5_1"
-    capacity = 2
     tier     = "Basic"
     family = "Gen5"
  }
