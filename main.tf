@@ -195,9 +195,10 @@ resource "azurerm_mysql_server" "mysql" {
   ssl_enforcement     = "Disabled"
 
   sku {
-    name     = "MYSQLB50"
-    capacity = 50
+    name     = "B_Gen4_1"
+    capacity = 4
     tier     = "Basic"
+    family = "family"
  }
   storage_profile {
   storage_mb                   = "51200"
